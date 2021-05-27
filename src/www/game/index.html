@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GuessDraw</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div id="app">
+    <div class="chat side-panel">
+      <div class="panel-title">
+        <h1>Chat & Guess</h1>
+      </div>
+      <div class="panel-content">
+        <div class="chat-messages">
+          <div v-for="m in chatMessages" class="chat-message">
+            <div class="message-from">
+              <div class="message-author">
+                {{m.author}}
+              </div>
+              <div class="message-type">
+                [{{m.type}}]
+              </div>
+            </div>
+            <div class="message-content">
+              {{m.message}}
+            </div>
+          </div>
+        </div>
+        <div class="input-area">
+          <input v-model="chatInput" @keydown="onChatInputKeyDown" type="text" placeholder="Type something.."/>
+        </div>
+      </div>
+    </div>
+    <div class="drawing-area">
+      
+    </div>
+    <div class="players side-panel">
+      <div class="panel-title">
+        <h1>Players</h1>
+      </div>
+      <div class="panel-content">
+      
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/vue@next"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>

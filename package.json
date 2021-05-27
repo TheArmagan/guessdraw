@@ -1,0 +1,22 @@
+{
+  "name": "guessdraw",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/TheArmagan/guessdraw.git",
+  "author": "Kıraç Armağan Önal <kiracarmaganonal@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "mongoose": "^5.12.11",
+    "socket.io": "^4.1.2",
+    "stuffs": "^0.1.2",
+    "yup": "^0.32.9"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.12",
+    "@types/mongodb": "^3.6.16",
+    "@types/mongoose": "^5.10.5"
+  }
+}
